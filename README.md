@@ -4,7 +4,7 @@ Magento 2 Certified Professional Developer notes
 
 # 1. Topics
 
-1. 18% 1 Magento Architecture and Customization Techniques  (11 questions)
+1. 18% 1-Magento Architecture and Customization Techniques  (11 questions)
       - modules, config, di, plugins, events, cron, cli, cache
 2. 12% 2-Request Flow Processing                            (7 questions)
       - modes, front contr., url, rewrite, action contr., response, routes, 404, layout, page yout
