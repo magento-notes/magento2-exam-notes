@@ -46,35 +46,39 @@
 
 # Interfaces for work with configs
 
-#### \Magento\Framework\Config\Reader\Filesystem, \Magento\Framework\Config\ReaderInterface
+#### [\Magento\Framework\Config\Reader\Filesystem](https://github.com/magento/magento2/blob/2.2-develop/lib/internal/Magento/Framework/Config/Reader/Filesystem.php), [\Magento\Framework\Config\ReaderInterface](https://github.com/magento/magento2/blob/2.2-develop/lib/internal/Magento/Framework/Config/ReaderInterface.php)
 Gets .xsd names from schema locator, gets full .xml file list from file resolver, merges all files, validates, runs converter to get resulting array.
-
 - read(scope)
   + `fileResolver->get(_filename)`
   + merge and validate each file (if mode developer)
-  + validate merged dom
+  + validate merged DOM
   + converter->convert(dom) => array
 - `_idAttributes`, `_fileName`, `_schemaFile` (from schemaLocator), `_perFileSchema` (from schemaLocator), filename (menu.xml)
 - schemaFile from schemaLocator
 
-#### \Magento\Catalog\Model\ProductTypes\Config\Converter, \Magento\Framework\Config\ConverterInterface - array in any format
-- convert(\DOMDocument $source)
+#### [\Magento\Framework\Config\ConverterInterface](https://github.com/magento/magento2/blob/2.2-develop/lib/internal/Magento/Framework/Config/ConverterInterface.php)
+Convert an array to any format
+- `convert(\DOMDocument $source)`
 
-#### \Magento\Framework\Config\SchemaLocatorInterface - full path to .xsd
+#### [\Magento\Framework\Config\SchemaLocatorInterface](https://github.com/magento/magento2/blob/2.2-develop/lib/internal/Magento/Framework/Config/SchemaLocatorInterface.php) - full path to .xsd
 - `getPerFileSchema` - per file before merge
 - `getSchema` - merged file
 
-#### \Magento\Framework\Config\ValidationStateInterface
+#### [\Magento\Framework\Config\ValidationStateInterface](https://github.com/magento/magento2/blob/2.2-develop/lib/internal/Magento/Framework/Config/ValidationStateInterface.php)
 
 This interface retrieves the validation state.
+- `isValidationRequired()`
 
-#### \Magento\Framework\Config\ScopeListInterface
+#### [\Magento\Framework\Config\ScopeListInterface](https://github.com/magento/magento2/blob/2.2-develop/lib/internal/Magento/Framework/Config/ScopeListInterface.php)
 
 This interface the list of all scopes.
+- `getAllScopes()`
 
-#### \Magento\Framework\Config\DataInterface
+#### [\Magento\Framework\Config\DataInterface](https://github.com/magento/magento2/blob/2.2-develop/lib/internal/Magento/Framework/Config/DataInterface.php)
 
 This interface helps to get the configuration data in a specified scope.
+- `merge(array $config);`
+- `get($key, $default = null)`
 
 ### Configuration load and merge flow
 
