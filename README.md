@@ -41,4 +41,5 @@ Magento 2 Certified Professional Developer notes
 + [Magento 2.2 Developer Documentation](http://devdocs.magento.com/)
 + [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 + [Markdown Cheatsheet RU](https://github.com/sandino/Markdown-Cheatsheet)
++ [Swiftotter Study Guide](https://swiftotter.com/technical/certifications/magento-2-certified-developer-study-guide)
 
