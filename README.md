@@ -23,7 +23,7 @@ Magento 2 Certified Professional Developer notes
       * normal/wishlist/reorder/quote merge
 9. 5% 9 - Sales Operations                                   (3 questions)
       - order processing, status, invoice, refund
-10.5% 10 - Customer Management                              (3 questions)
+10. 5% 10 - Customer Management                              (3 questions)
       - my account, customer extension attributes, address, customer group, tax
 
 
