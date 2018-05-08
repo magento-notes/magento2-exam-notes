@@ -31,8 +31,8 @@ Magento 2 Certified Professional Developer notes
 
 + 60 Multiple Choice items
 + 90 minutes to complete the exam
-+ Magento Open Source (2.2) and Magento Commerce (2.2)
-+ All exams are administered by Kryterion - Academy of Networking LANIT
++ A score of 64% or higher is needed to pass the Magento 2 Certified Professional Developer exam
++ Based on Magento Open Source (2.2) and Magento Commerce (2.2), but applicable to those using any version of Magento 2.
 
 # 2. Resources
 
