@@ -7,11 +7,11 @@ Magento 2 Certified Professional Developer notes
 1. 18% 1 - Magento Architecture and Customization Techniques  (11 questions)
       - modules, config, di, plugins, events, cron, cli, cache
 2. 12% 2 - Request Flow Processing                            (7 questions)
-      - modes, front contr., url, rewrite, action contr., response, routes, 404, layout, page yout
+      - modes, front contr., url, rewrite, action contr., response, routes, 404, layout, page layout
 3. 10% 3 - Customizing the Magento UI                         (6 questions)
       - theme, template, block, block cache, JS, UI component (briefly)
 4. 7% 4 - Working with Databases in Magento                  (4 questions)
-      - repository, api data class, search criteria, table, load/save, collection, select, gration 
+      - repository, api data class, search criteria, table, load/save, collection, select, migration 
 5. 8% 5 - Using the Entity-Attribute-Value (EAV) Model       (5 questions)
       - hierarchy, storage, load/save, attributes, frontend/source/backend
 6. 10% 6 - Developing with Adminhtml                          (6 questions)
@@ -19,7 +19,7 @@ Magento 2 Certified Professional Developer notes
 7. 12% 7 - Customizing the Catalog                            (7 questions)
       - product types, price, price render, category, catalog rules
 8. 13% 8 - Customizing the Checkout Process                   (8 questions)
-      - cart rule, add to cart, quote totals, product type render, shipping method, payment thod
+      - cart rule, add to cart, quote totals, product type render, shipping method, payment method
       * normal/wishlist/reorder/quote merge
 9. 5% 9 - Sales Operations                                   (3 questions)
       - order processing, status, invoice, refund
