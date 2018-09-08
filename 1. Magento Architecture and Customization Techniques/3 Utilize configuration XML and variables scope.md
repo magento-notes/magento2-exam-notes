@@ -16,7 +16,7 @@
 - `email_templates.xml` - id label file type module -- view/frontend/email/name.html
 - `events.xml` - observers, shared, disabled
 - `export.xml`
-- `xtension_attributes.xml` - for, attribute code, attribute type
+- `extension_attributes.xml` - for, attribute code, attribute type
 - `fieldset.xml`
 - `import.xml`
 - `indexer.xml` - class, view_id, title, description
