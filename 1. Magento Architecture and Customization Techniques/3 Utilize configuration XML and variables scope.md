@@ -82,6 +82,13 @@ Helps to get the configuration data in a specified scope.
 - `merge(array $config);`
 - `get($key, $default = null)`
 
+
+###### Links and examples:
+- Product types configs model to read data from [product_types.xml](https://github.com/magento/magento2/blob/2.2-develop/app/code/Magento/Catalog/etc/product_types.xml): [\Magento\Catalog\Model\ProductTypes](https://github.com/magento/magento2/tree/2.2-develop/app/code/Magento/Catalog/Model/ProductTypes) 
+- Implementation via virtual types to read data from layout.xml: [Magento/Theme/etc/di.xml](https://github.com/magento/magento2/blob/2.2-develop/app/code/Magento/Theme/etc/di.xml#L48)
+- https://www.atwix.com/magento-2/working-with-custom-configuration-files/
+
+
 ### Configuration load and merge flow
 
 #### Loading order
