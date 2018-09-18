@@ -46,7 +46,7 @@
 
 # Interfaces for work with configs
 
-#### [\Magento\Framework\Config\Reader\Filesystem](https://github.com/magento/magento2/blob/2.2-develop/lib/internal/Magento/Framework/Config/Reader/Filesystem.php), [\Magento\Framework\Config\ReaderInterface](https://github.com/magento/magento2/blob/2.2-develop/lib/internal/Magento/Framework/Config/ReaderInterface.php)
+#### [\Magento\Framework\Config\Reader\Filesystem](https://github.com/magento/magento2/blob/2.2-develop/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) -> [\Magento\Framework\Config\ReaderInterface](https://github.com/magento/magento2/blob/2.2-develop/lib/internal/Magento/Framework/Config/ReaderInterface.php)
 Gets .xsd names from schema locator, gets full .xml file list from file resolver, merges all files, validates, runs converter to get resulting array.
 - read(scope)
   + `fileResolver->get(_filename)`
@@ -69,14 +69,16 @@ Convert an array to any format
 This interface retrieves the validation state.
 - `isValidationRequired()`
 
+[\Magento\Framework\App\Arguments\ValidationState](https://github.com/magento/magento2/blob/2.2-develop/lib/internal/Magento/Framework/App/Arguments/ValidationState.php) is default implementation, that require validation only in developer mode.
+
 #### [\Magento\Framework\Config\ScopeListInterface](https://github.com/magento/magento2/blob/2.2-develop/lib/internal/Magento/Framework/Config/ScopeListInterface.php)
 
 This interface the list of all scopes.
 - `getAllScopes()`
 
-#### [\Magento\Framework\Config\DataInterface](https://github.com/magento/magento2/blob/2.2-develop/lib/internal/Magento/Framework/Config/DataInterface.php)
+#### [\Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.2-develop/lib/internal/Magento/Framework/Config/Data.php) -> [\Magento\Framework\Config\DataInterface](https://github.com/magento/magento2/blob/2.2-develop/lib/internal/Magento/Framework/Config/DataInterface.php)
 
-This interface helps to get the configuration data in a specified scope.
+Helps to get the configuration data in a specified scope.
 - `merge(array $config);`
 - `get($key, $default = null)`
 
