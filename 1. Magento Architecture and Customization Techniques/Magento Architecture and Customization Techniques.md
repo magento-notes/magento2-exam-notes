@@ -329,7 +329,7 @@ generate
 check for standalone process
 ```
 
-\Magento\Cron\Model\Config\Data extends \Magento\Cron\Model\Config\Data
+`\Magento\Cron\Model\Config\Data` extends `\Magento\Framework\Config\Data`
 - merges \Magento\Cron\Model\Config\Reader\Db::get from Database
 
   Sample DB structure:
