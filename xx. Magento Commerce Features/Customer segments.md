@@ -87,10 +87,26 @@ This does not work when full page cache is enabled and Varnish returns HTML dire
 
 ## Listening to events and updating matched customers
 
-Segments needs to listen to some events related to conditions. After segment with conditions is saved,
-table `magento_customersegment_event` holds events that it listens to.
+Segments needs to listen to some events related to conditions.
 
-Segment rule table holds rendered `condition_sql` column with placeholders:
+After segment with conditions is saved, table `magento_customersegment_event` holds events that it listens to:
+
+- Model\Segment::beforeSave
+- Model\Segment::collectMatchedEvents
+- recursively for each added conditions children:
+  - Model\Condition\Combine\AbstractCombine::getMatchedEvents
+
+
+Segment rule table holds rendered `condition_sql`:
+
+- Model\Segment::beforeSave
+- Model\Rule\Condition\Combine\Root::getConditionsSql
+- recursively for each added conditions children:
+  - Model\Condition\Combine\AbstractCombine::getConditionsSql
+  - `_prepareConditionsSql`
+
+
+`condition_sql` column placeholders:
 - :customer_id
 - :website_id
 - :quote_id
@@ -182,11 +198,35 @@ Does 2 things:
           // - clear checkout session
 ```
 
-## All Depersonalize examples
+## Create segment programmatically
 
-\Magento\Catalog\Model\Layout\DepersonalizePlugin::afterGenerateElements:
-- clear catalog session
+Doesn't have API interfaces, repository.
 
+```PHP
+/** @var \Magento\CustomerSegment\Model\Segment $segment */
+$segment = $this->segmentFactory->create();
+$segment->setName($name);
+$segment->setDescription(null);
+$segment->setIsActive(1);
+$segment->setWebsiteIds(array_keys($this->storeManager->getWebsites()));
+$segment->setApplyTo(\Magento\CustomerSegment\Model\Segment::APPLY_TO_VISITORS_AND_REGISTERED);
+// @see \Magento\Rule\Model\AbstractModel::loadPost
+$segment->getConditions()->setConditions([])->loadArray([
+    'type' => \Magento\CustomerSegment\Model\Segment\Condition\Combine\Root::class,
+    'aggregator' => 'all',
+    'operator' => '',
+    'value' => '1',
+    'conditions' => [
+        [
+            'type' => \Magento\CustomerSegment\Model\Segment\Condition\Shoppingcart\Amount::class,
+            'attribute' => 'grand_total',
+            'operator' => '>=',
+            'value' => '100',
+        ]
+    ],
+]);
+$segment->save();
+```
 
 
 ## Catalog frontend action
