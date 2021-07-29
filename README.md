@@ -2,7 +2,7 @@
 
 Magento 2 Certified Professional Developer notes
 
-# 1. Topics
+# Topics
 
 1. 18% 1 - Magento Architecture and Customization Techniques  (11 questions)
       - modules, config, di, plugins, events, cron, cli, cache
@@ -11,7 +11,7 @@ Magento 2 Certified Professional Developer notes
 3. 10% 3 - Customizing the Magento UI                         (6 questions)
       - theme, template, block, block cache, JS, UI component (briefly)
 4. 7% 4 - Working with Databases in Magento                  (4 questions)
-      - repository, api data class, search criteria, table, load/save, collection, select, migration 
+      - repository, api data class, search criteria, table, load/save, collection, select, migration
 5. 8% 5 - Using the Entity-Attribute-Value (EAV) Model       (5 questions)
       - hierarchy, storage, load/save, attributes, frontend/source/backend
 6. 10% 6 - Developing with Adminhtml                          (6 questions)
@@ -27,22 +27,27 @@ Magento 2 Certified Professional Developer notes
       - my account, customer extension attributes, address, customer group, tax
 
 
-### 1.2 Magento 2 Certified Professional Developer
+### AD0-E703 Adobe Magento Commerce Developer Expert (Formerly Magento 2 Certified Professional Developer)
 
 + 60 Multiple Choice items
-+ 90 minutes to complete the exam
++ 120 minutes to complete the exam
 + A score of 64% or higher is needed to pass the Magento 2 Certified Professional Developer exam
-+ Based on Magento Open Source (2.2) and Magento Commerce (2.2), but applicable to those using any version of Magento 2.
++ Based on Adobe Magento Open Source / Commerce (Enterprise) version 2.3, but applicable to those using any version of Magento 2.
 
-# 2. Resources
+# Resources
 
-## 2.1. Links
+## Links
 + [Magento 2 Certified Professional Developer](https://u.magento.com/magento-2-certified-professional-developer)
 + [Magento 2.2 Developer Documentation](http://devdocs.magento.com/)
 + [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 + [Markdown Cheatsheet RU](https://github.com/sandino/Markdown-Cheatsheet)
 + [Swiftotter Study Guide](https://swiftotter.com/technical/certifications/magento-2-certified-developer-study-guide)
++ [Belvg - Magento 2 Certified Professional Developer Guide](https://belvg.com/tutorial/magento-2-certified-professional-developer-guide&sa=D&ust=1609223264400000&usg=AOvVaw3wfSbNPHKwUPDf_GWWY6T4)
++ [Magento DevDocs - Backend Dev Guide](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/bk-extension-dev-guide.html&sa=D&ust=1609223264400000&usg=AOvVaw3D424pQdrMHBTCNLGC8aTO)
++ [Magento DevDocs - Frontend Dev Guide](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/bk-frontend-dev-guide.html&sa=D&ust=1609223264401000&usg=AOvVaw1JS0jwvA_O3qk-en_RD83l)
++ [Magento DevDocs - UI Components Dev Guide](https://devdocs.magento.com/guides/v2.3/ui_comp_guide/bk-ui_comps.html&sa=D&ust=1609223264402000&usg=AOvVaw3o33OMyCr5fWmJMutRw6Jw)
++ [Magento DevDocs - Javascript Dev Guide](https://devdocs.magento.com/guides/v2.3/javascript-dev-guide/bk-javascript-dev-guide.html&sa=D&ust=1609223264402000&usg=AOvVaw1jev8HcRQ-LtGrWqzET33Q)
 
-## 2.2. Credits
+## Credits
 
 Inspired by https://github.com/colinmurphy/magento-exam-notes
